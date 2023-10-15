@@ -15,7 +15,7 @@ public class ReuseableSteps implements ElementsHelper{
     @Step("denemeXkkk")
     public void _01(){
 
-        driver.findElement(By.id("APjFqb")).sendKeys("dasdasdasd");
+        driver.findElement(By.id("APjFqb")).sendKeys("hhkkhkhkhkhkh");
         findElementWithKey("ahmet").click();
 
     }
