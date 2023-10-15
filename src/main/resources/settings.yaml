@@ -1,0 +1,5 @@
+url: https://www.google.com/
+browserType: Chrome
+implicitlyWait: 10
+pageLoadTimeout: 30
+explicitWait: 15

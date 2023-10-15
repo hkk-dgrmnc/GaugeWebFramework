@@ -1,0 +1,6 @@
+[
+	"gauge",
+	"run",
+	"--dir=/Users/virgosol/IdeaProjects/GaugeWebFramework",
+	"/Users/virgosol/IdeaProjects/GaugeWebFramework/specs"
+]
