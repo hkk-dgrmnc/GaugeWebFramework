@@ -7,4 +7,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Scenario Heading
 ----------------
-* denemeXkkk
+* Find element with key:"deneme" and verify is displayed.
+* Find element with key:"deneme" and click.
+* Find element with key:"deneme" and send text:"Value_deneme".
+*

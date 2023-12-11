@@ -29,7 +29,7 @@ public interface ElementsHelper {
             webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementTypeAndValue.getLocatorValue(key))));
         }
         else{
-            throw new IllegalArgumentException("elements.properties dosyasında geçersiz locator type türü => " + key + ": " + elementTypeAndValue.getLocatorType(key));
+            throw new AssertionError("elements.properties dosyasında geçersiz locator type => " + key + ": " + elementTypeAndValue.getLocatorType(key));
         }
         return webElement;
     }
@@ -48,7 +48,7 @@ public interface ElementsHelper {
             webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(elementTypeAndValue.getLocatorValue(key))));
         }
         else{
-            throw new IllegalArgumentException("settings.yaml dosyasında geçersiz driverType türü => " + key + ": " + elementTypeAndValue.getLocatorType(key));
+            throw new AssertionError("settings.yaml dosyasında geçersiz driverType türü => " + key + ": " + elementTypeAndValue.getLocatorType(key));
         }
         return webElements;
     }

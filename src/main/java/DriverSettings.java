@@ -11,6 +11,8 @@ public class DriverSettings {
 
     public static WebDriver driver;
     public static ConfigReader config;
+
+    public static ValueReader valueReader;
     public static ElementsReader elementsReader;
 
 
@@ -19,6 +21,9 @@ public class DriverSettings {
 
         config = new ConfigReader("src/main/resources/settings.yaml");
         elementsReader = new ElementsReader("src/main/resources/elements.properties");
+        valueReader = new ValueReader("src/main/resources/value.yaml");
+
+
 
         if(Objects.equals(config.getProperty("browserType"), "Chrome")){
             driver = new ChromeDriver();
@@ -27,7 +32,7 @@ public class DriverSettings {
             driver = new FirefoxDriver();
         }
         else{
-            throw new IllegalArgumentException("settings.yaml dosyasında geçersiz driverType türü: ");
+            throw new AssertionError(config.getProperty("browserType") +" Browser type has not been defined to the framework yet ");
         }
 
         driver.manage().window().maximize();

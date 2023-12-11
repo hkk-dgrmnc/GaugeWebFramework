@@ -1,6 +1,8 @@
 [
-	"gauge",
+	"/opt/homebrew/bin/gauge",
 	"run",
-	"--dir=/Users/virgosol/IdeaProjects/GaugeWebFramework",
-	"/Users/virgosol/IdeaProjects/GaugeWebFramework/specs"
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"/Users/virgosol/IdeaProjects/GaugeWebFramework/specs/deneme.spec:8"
 ]

@@ -1,0 +1,31 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 431milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 431"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 60631"}
+{"logLevel":"info","message":"Listening on port:60631"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'ReuseableSteps._02' and 'ReuseableSteps._02'"}
+{"logLevel":"debug","message":"Found Find element with key:{} and send text:{}. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'ReuseableSteps._01' and 'ReuseableSteps._01'"}
+{"logLevel":"debug","message":"Found Find element with key:{} and click. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'ReuseableSteps._03' and 'ReuseableSteps._03'"}
+{"logLevel":"debug","message":"Found Find element with key:{} and verify is displayed. in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tFind element with key:{} and send text:{}. : public void _02(String key, String text)"}
+{"logLevel":"debug","message":"\tFind element with key:{} and verify is displayed. : public void _03(String key)"}
+{"logLevel":"debug","message":"\tFind element with key:{} and click. : public void _01(String key)"}
+Ara 11, 2023 1:58:05 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 119
+{"logLevel":"debug","message":"Executing 'Find element with key:{} and verify is displayed.' using 'class ReuseableSteps._03"}
+{"logLevel":"debug","message":"Executing 'Find element with key:{} and click.' using 'class ReuseableSteps._01"}
+{"logLevel":"debug","message":"Executing 'Find element with key:{} and send text:{}.' using 'class ReuseableSteps._02"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

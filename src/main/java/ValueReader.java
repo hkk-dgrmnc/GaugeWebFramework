@@ -5,10 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 
-public class ConfigReader {
+public class ValueReader {
     private Map<String, Object> yamlData;
 
-    public ConfigReader(String filePath) {
+    public ValueReader(String filePath) {
 
         try (InputStream input = Files.newInputStream(Paths.get(filePath))) {
             Yaml yaml = new Yaml();
@@ -18,12 +18,12 @@ public class ConfigReader {
         }
     }
 
-    public String getProperty(String key){
+    public String getProperty(String text){
         String value;
-        if (yamlData.containsKey(key)) {
-            value = yamlData.get(key).toString();
+        if (yamlData.containsKey(text)) {
+            value = yamlData.get(text).toString();
         } else {
-            throw new AssertionError( key + " is not found in Settings.yaml");
+            throw new AssertionError( text + " is not found in value.yaml");
         }
         return value;
     }

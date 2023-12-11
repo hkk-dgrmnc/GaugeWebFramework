@@ -1,7 +1,9 @@
 {
 	"Args": [
 		"run",
-		"--dir=/Users/virgosol/IdeaProjects/GaugeWebFramework"
+		"--machine-readable",
+		"--hide-suggestion",
+		"--simple-console"
 	],
 	"FailedItems": []
 }
