@@ -11,7 +11,6 @@ public class DriverSettings {
 
     public static WebDriver driver;
     public static ConfigReader config;
-
     public static ValueReader valueReader;
     public static ElementsReader elementsReader;
 

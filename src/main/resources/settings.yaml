@@ -3,3 +3,5 @@ browserType: Chrome
 implicitlyWait: 10
 pageLoadTimeout: 30
 explicitWait: 15
+fluentMaxWait: 15
+pollingWait: 500

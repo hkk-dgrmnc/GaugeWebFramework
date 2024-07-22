@@ -10,4 +10,3 @@ Scenario Heading
 * Find element with key:"deneme" and verify is displayed.
 * Find element with key:"deneme" and click.
 * Find element with key:"deneme" and send text:"Value_deneme".
-*
